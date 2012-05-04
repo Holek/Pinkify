@@ -1,6 +1,8 @@
 Pinkify
 =======
 
+![Oh, Pinkie](http://images3.wikia.nocookie.net/__cb20110930130423/halo/images/f/f6/Pinkie_Pie_4th_Wall.png)
+
 A jQuery plugin to add simple animations with sound on any event.
 
 Getting started
