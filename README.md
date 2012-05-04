@@ -18,7 +18,7 @@ You need to have an image you want to use, and know its dimensions:
 Firing on events
 ----------------
 
-Since this plugin works on all elements, oyu need to fire it up manually after a desired action, for example, after a user clicked on an element:
+Since this plugin works on all elements, you need to fire it up manually after a desired action, for example, after a user clicked on an element:
 
     $('a').bind('click', function(){
       $(this).pinkify({
