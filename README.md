@@ -53,4 +53,5 @@ All available options
         ],
         'click' : function () {
           $(this).pinkify('destroy');
-        });
+        }
+      });
