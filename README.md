@@ -26,18 +26,19 @@ Since this plugin works on all elements, you need to fire it up manually after a
       });
     });
 
-Available options
------------------
+All available options
+---------------------
 
-      var settings = $.extend( {
+      $(element).pinkify( {
         'animation'   : {
-          'direction' : 'left',
-          'duration'  : 0.2
+          'direction' : 'left', // for now it onl;y responds to 'left' and 'right'
+          'duration'  : 0.2 // duration in seconds in which one image is moving
         },
         'imageUrl'    : 'pinkie_parasprite_polka_by_fluttershylover.gif',
         'imageWidth'  : 106,
         'imageHeight' : 126,
         'audioAttr'   : {
+          /* attributes for audio tag */
           // 'autoplay' : 'autoplay',
           // 'loop'     : 'true'
         },
@@ -46,9 +47,10 @@ Available options
           'target' : '_blank'
         },
         'audioFiles'  : [
+          /* links to audio files used as source */
           // 'http://dl.dropbox.com/u/23165202/Pinkies%20Parasprite%20Polka%20%5BKeep-Mp3.com%5D.ogg',
           // 'http://dl.dropbox.com/u/23165202/Pinkies%20Parasprite%20Polka%20%5BKeep-Mp3.com%5D.mp3'
         ],
         'click' : function () {
           $(this).pinkify('destroy');
-        }
+        });
