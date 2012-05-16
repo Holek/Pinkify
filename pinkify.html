@@ -3,7 +3,7 @@
 <head>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <meta charset=utf-8 />
-<title>JS Bin</title>
+<title>AT-AT-ify</title>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -167,12 +167,19 @@
 
   };
 })( jQuery );
-    jQuery(document).ready(function(){
-     jQuery('body').pinkify({'imageUrl':'http://railslove.com/assets/pinkie_parasprite_polka_by_fluttershylover.gif'});
-                               });
+  jQuery(document).ready(function(){
+    jQuery('body').pinkify({
+      'imageUrl':'http://www.gifmania.co.uk/Star-Wars/Atat/at-at.gif',
+      'imageWidth' : 140,
+      'imageHeight' : 104,
+      'animation' : {
+        'duration': 1.5
+      }
+    });
+  });
   </script>
 </head>
 <body>
-  <p id="hello">Hello World</p>
+  <p>oh the horror</p>
 </body>
 </html>
