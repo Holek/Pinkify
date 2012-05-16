@@ -75,15 +75,16 @@
 
           // IN SECONDS!
           var delay = $this.outerWidth() / settings.imageWidth * settings.animation.duration;
-              div = $('<div/>').css({
+              span = $('<span/>').css({
                 'width': '100%',
                 'height': settings.imageHeight+'px',
                 'position': 'absolute',
                 'bottom': '0px',
+                'display': 'block',
                 'background': 'url("'+settings.imageUrl+'") repeat-x',
               })[0];
-          div.style[window.animationstring] = 'pinkify-entrance-'+element_unique_id+' '+delay+'s linear, pinkify-'+element_unique_id+' '+settings.animation.duration+'s linear infinite '+delay+'s';
-          pinkify.append(div);
+          span.style[window.animationstring] = 'pinkify-entrance-'+element_unique_id+' '+delay+'s linear, pinkify-'+element_unique_id+' '+settings.animation.duration+'s linear infinite '+delay+'s';
+          pinkify.append(span);
 
           var keyframes1 = '@' + keyframeprefix + 'keyframes pinkify-'+element_unique_id+' { '+
                             'from{background-position: '+(settings.animation.direction === 'right' ? '-' : '')+settings.imageWidth+'px; } '+
